@@ -10,8 +10,8 @@ spring:
 
 
 mybatis:
-  mapper-locations: classpath:cn/Relyol/*/mapper/*Mapper.xml #?????
-  type-aliases-package: cn.Relyol.Mapper
+  mapper-locations: classpath:e/*/mapper/*Mapper.xml #?????
+  type-aliases-package: com.xtonlin.Mapper
 
 #??
 logging:
