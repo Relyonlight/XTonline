@@ -1,0 +1,35 @@
+server:
+  port: 8080
+#数据源配置
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql:///pethome
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:cn/Relyol/*/mapper/*Mapper.xml #?????
+  type-aliases-package: cn.Relyol.Mapper
+
+#??
+logging:
+  level:
+    cn:
+      itsource: debug
+
+
+#server:
+#  port: 8088
+##数据源配置
+#spring:
+#  datasource:
+#    username: root
+#    password: 111222
+#    url: jdbc:mysql:///pethome
+#    driver-class-name: com.mysql.jdbc.Driver
+#  #mybatis配置
+#  mybatis:
+#    mapper-locations: classpath:cn/itsource/*/mapper/*Mapper.xml #可以不配置
+#    type-aliases-package: cn.itsource.domain,cn.itsource.query
